@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "SkillsSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "skills-config.json", "--width","600", "--border", "28"
+            ]
+        },
+        {
+            "name": "LoyaltySplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "loyalty-config.json", "--width","1024", "--border", "28"
+            ]
+        }
+    ]
+}
