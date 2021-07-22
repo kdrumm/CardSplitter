@@ -1,3 +1,5 @@
 source/
 dest/
 config/
+.vscode/
+venv/
