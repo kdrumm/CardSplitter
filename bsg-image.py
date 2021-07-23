@@ -42,7 +42,9 @@ def splitImage(args, file, config, settings):
     count=0
     border = config.get('border', args.border)
     width = config.get('width', args.width)
+    height = config.get('height')
     dest = "dest/"+settings.get('dest','def')
+    num_images = config.get('num', None)
     try :
         os.mkdir(dest)
     except:
@@ -51,25 +53,30 @@ def splitImage(args, file, config, settings):
     if config.get('cardback', False):
         None
     
+    ratio=dy / dx
+    w=width
+    h=height or int(width * ratio)
+
+    num_def=1
+
     for y in range(rows):
         for x in range(columns):
-            px=dx*x
-            py=dy*y
-            card=source.crop((px,py,dx+px,dy+py))
-            ratio=dy / dx
-            w=width
-            h=int(width * ratio)
-            card=card.resize((w,h))
-            if (border > 0):
-                card = ImageOps.expand(card, border=border, fill='white')
-            num=config.get(f"{y}-{x}", 1)
-            for n in range(num):
-                card.putpixel((0,0),(x%256,y%256,n%256))
-                card.save(f"{dest}/{sprite.name}-{y}-{x}-{n}.png", "png")
-            count+=1
-            num = config.get('num', None)
-            if num is not None and count >= num:
-                return
+            num_to_create=config.get(f"{y}-{x}", num_def)
+            print(f"creating {num_to_create} at {y} {x}")
+            if (num_to_create > 0):
+                px=dx*x
+                py=dy*y
+                card=source.crop((px,py,dx+px,dy+py))
+                card=card.resize((w,h))
+                if (border > 0):
+                    card = ImageOps.expand(card, border=border, fill='white')
+                for n in range(num_to_create):
+                    card.putpixel((0,0),(x%256,y%256,n%256))
+                    card.save(f"{dest}/{sprite.name}-{y}-{x}-{n}.png", "png")
+                count+=1
+            
+            if num_images is not None and count >= num_images:
+                num_def = 0
 
 def main():
     args = parse_args()
