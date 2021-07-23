@@ -23,7 +23,18 @@
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
-                "loyalty-config.json", "--width","1024", "--border", "28"
+                "loyalty-config.json"
+            ]
+        },
+        {
+            "name": "SuperCrisisSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "super-crisis-config.json"
             ]
         }
     ]
