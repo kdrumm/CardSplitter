@@ -12,7 +12,7 @@
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
-                "skills-config.json", "--width","600", "--border", "28"
+                "skills-config.json"
             ]
         },
         {
@@ -35,6 +35,126 @@
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
                 "super-crisis-config.json"
+            ]
+        },
+        {
+            "name": "CrisisSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "crisis-config.json"
+            ]
+        },
+        {
+            "name": "DestinationSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "destination.json"
+            ]
+        },
+        {
+            "name": "QuorumSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "Quorum.json"
+            ]
+        },
+        {
+            "name": "AgendaSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "Agenda.json"
+            ]
+        },
+        {
+            "name": "CrossroadsSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "Crossroads.json"
+            ]
+        },
+        {
+            "name": "MutinySplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "Mutiny.json"
+            ]
+        },
+        {
+            "name": "MissionSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "mission.json"
+            ]
+        },
+        {
+            "name": "MotiveSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "motive.json"
+            ]
+        },
+        {
+            "name": "NewCapricaCrisisSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "newCap-crisis.json"
+            ]
+        },
+        {
+            "name": "RolesObjectivesCrisisSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
+                "roles-obj.json"
+            ]
+        },
+        {
+            "name": "AllSplitter",
+            "type": "python",
+            "request": "launch",
+            "program": "bsg-image.py",
+            "console": "integratedTerminal",
+            "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
+            "args": [
             ]
         }
     ]
