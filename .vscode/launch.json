@@ -8,7 +8,7 @@
             "name": "SkillsSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -19,7 +19,7 @@
             "name": "LoyaltySplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -30,7 +30,7 @@
             "name": "SuperCrisisSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -41,7 +41,7 @@
             "name": "CrisisSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -52,7 +52,7 @@
             "name": "DestinationSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -63,7 +63,7 @@
             "name": "QuorumSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -74,7 +74,7 @@
             "name": "AgendaSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -85,7 +85,7 @@
             "name": "CrossroadsSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -96,7 +96,7 @@
             "name": "MutinySplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -107,7 +107,7 @@
             "name": "MissionSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -118,7 +118,7 @@
             "name": "MotiveSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -129,7 +129,7 @@
             "name": "NewCapricaCrisisSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -140,7 +140,7 @@
             "name": "RolesObjectivesCrisisSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
@@ -151,7 +151,7 @@
             "name": "AllSplitter",
             "type": "python",
             "request": "launch",
-            "program": "bsg-image.py",
+            "program": "image-splitter.py",
             "console": "integratedTerminal",
             "python": "/home/kdrumm/projects/personal/bsg-image/venv/bin/python",
             "args": [
