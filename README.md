@@ -1,2 +1,2 @@
-# CardSplitter
-card splitter
+# SpriteSplitter
+sprite splitter
