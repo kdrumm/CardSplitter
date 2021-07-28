@@ -10,6 +10,8 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Create images from sprite')
     parser.add_argument(
         'config',
+        nargs='?',
+        default=None,
         type=str,
         help='config')
     parser.add_argument(
@@ -40,9 +42,9 @@ def splitImage(args, file, config, settings):
     
     
     count=0
-    border = config.get('border', args.border)
-    width = config.get('width', args.width)
-    height = config.get('height')
+    border = config.get('border', settings.get('border', args.border))
+    width = config.get('width', settings.get('width', args.width))
+    height = config.get('height', settings.get('height', args.height))
     dest = "dest/"+settings.get('dest','def')
     num_images = config.get('num', None)
     try :
@@ -78,18 +80,30 @@ def splitImage(args, file, config, settings):
             if num_images is not None and count >= num_images:
                 num_def = 0
 
-def main():
-    args = parse_args()
-    with open("config/"+args.config) as cfg:
-        config_data = json.load(cfg)
+def run_config(args, config_data):
     settings=config_data.get('settings', {})
     files = config_data.get('files',{})
     for file in files.keys():
         path=pathlib.Path(file)
         c= files.get(file, None)
         splitImage(args,path.as_posix(),c, settings)
+
+def main():
+    args = parse_args()
+    config_loc=pathlib.Path("config/")
+    if (args.config is None):
+        for file in config_loc.glob("*.json"):
+            print(f"Running file {file}")
+            with open(file) as cfg:
+                config_data = json.load(cfg)
+                run_config(args, config_data)
+    else:
+        with open(config_loc/args.config) as cfg:
+            config_data = json.load(cfg)
+            run_config(args, config_data)
     
 
 
 if __name__ == "__main__":
     main()
+
